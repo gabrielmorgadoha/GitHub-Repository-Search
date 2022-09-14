@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { GoRepo, GoBook, GoStar, GoRepoForked } from "react-icons/go";
 import { AiOutlineClockCircle } from "react-icons/ai";
@@ -18,7 +19,7 @@ const Repository = ({repository}) => {
                 <span className="languageInfo"><a title="Main Language used"> <GoBook /> {language} </a></span>
             </a>
             <div className="nameInfo"><a title="View repository on GitHub" href={"https://github.com/" + login + "/" + name}> <GoRepo /> {name} </a></div>
-            <small className="userInfo"> <MdSubdirectoryArrowRight /> <a title="View user page on GitHub" href={"https://github.com/" + login}><img src={avatar_url} className="imageInfo"></img> {login} </a></small>
+            <small className="userInfo"> <MdSubdirectoryArrowRight /> <a title="View user page on GitHub" href={"https://github.com/" + login}><img src={avatar_url} alt="user" className="imageInfo"></img> {login} </a></small>
             <div className="descriptionInfo"><a title={description}> {description} </a></div>
         </div>
     )
