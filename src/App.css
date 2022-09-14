@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.searchBar{
+  position: relative;
+  right: 10px;
+  display: flex;
+  height: 150px;
+  padding: 10px 30px;
+  margin: 10px 410px;
+  border-radius: 10px;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #333;
+  color: #fff;
+}
+
+.searchBar h1 a{
+  cursor: pointer;
+}
+
+.searchBar input{
+  outline: none;
+  padding: 14px;
+  border-radius: 7px;
+  border: none;
+  width: 70%;
+}
+
+.applicationName{
+  position: relative;
+  top: 10px;
+}
+
+.searchButton{
+  padding: 10px 20px;
+  position: relative;
+  right: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.sortButton{
+  padding: 10px 20px;
+  position: relative;
+  top: -45px;
+  left: 750px;
+  width: 300px;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.pageButtons{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.pageButtons button{
+  padding: 8px 16px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.pageButtons svg{
+  size: 5px;
+}
+
+.totalRepositoriesBox{
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  padding: 5px 15px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: black;
+  border-width: 2px;
+  background-color: #756d6d;
+  color: white;
+}
+
+.totalPagesTitleBox{
+  position: absolute;
+  top: 90%;
+  left: 58.5%;
+  transform: translate(-50%, -50%);
+  padding: 5px 15px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: black;
+  border-width: 2px;
+  background-color: #756d6d;
+  color: white;
+}
+
+.totalRepositoriesBox:hover, .totalPagesTitleBox:hover{
+  color: white;
+}
+
+.loadingScreen{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.repositoriesList{
+  padding: 3px;
+  height: 630px;
+  overflow-y: auto;
+  background-color: transparent;
+}
+
+.repositoriesList h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 15px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: black;
+  border-width: 2px;
+  background-color: #756d6d;
+  color: white;
+}
